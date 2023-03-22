@@ -12,8 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Runs a single command using the runners shell
-      - name: src
-        run: cd src
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
