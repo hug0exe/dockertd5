@@ -10,10 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: 'npm'
-          cache-dependency-path: src/package-lock.json
       - name: install dependencies
         run: npm install
       - name : Autograde Testing
